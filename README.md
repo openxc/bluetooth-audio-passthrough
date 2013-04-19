@@ -158,8 +158,9 @@ SET BT CLASS 280428
 #### HFP - Hands Free Protocol (Act like Bluetooth Headset)
 
 ```
+SET BT SSP 3 0
+SET BT AUTH * 0000
 SET PROFILE HFP ON
-
 SET BT CLASS 200404
 ```
 
