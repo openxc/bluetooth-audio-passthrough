@@ -1,0 +1,32 @@
+**Electrical**
+
+* Must be powered via a USB port
+* Must be able to pair from Android phone, Android tablet, iPhone and a PC with
+  a Bluetooth adapter with a default pre-arranged passcode (1234 is fine)
+* Must appear as an A2DP device to all Bluetooth connections
+* Audio stream quality must be imperceptibly different from SYNC Bluetooth (i.e.
+  vs Bluetooth iJoey to SYNC aux-in port) (e.g. no pops or clicks, not overly
+  compressed, no EQ compression)
+* LED activates when powered
+* A separate LED activates when paired and transmitting audio, or the color of a
+  single LED changes
+* Stream audio for 12 hours and record all disconnections and transmissions
+  errors
+* Run through 100 connect/disconnect cycles, looking for failures to connect, or
+  any instance in which the Bluetooth stack becomes out of sync
+* Must be capable of a reasonable amount of gain (added after the fact) (0xE,
+  -6dB works well with SYNC)
+
+**Physical**
+
+* iJoey must be able to go through 100 attach/detach procedures with the k-board
+  with no visible wear
+
+**Mechanical**
+
+* Cast urethane parts, designed for injection molding --> Constant wall
+  thickness, appropriate minimum thickness material (0.050" for ABS), draft
+  angles, slide consideration
+* Robust attachment and mating features between housing pieces
+* Assuming a K-Board installed into a 2012 Focus cup holder, BT iJoey must fit
+  appropriately in provided space
