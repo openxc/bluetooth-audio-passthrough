@@ -1,9 +1,13 @@
 Bluetooth Audio Accessory
 =========================
 
-[TOC]
+This repository is a part of the [OpenXC][] project.
 
-![Bluetooth Audio Accessory](./BT_Audio_scaled.JPG "The Bluetooth Audio Accessory")
+This repository contains the documentation and open source design files for an
+example OpenXC hardware accessory, the Bluetooth Audio accessory, originally
+created by Ford.
+
+![Bluetooth Audio Accessory](/docs/BT_Audio_scaled.JPG "The Bluetooth Audio Accessory")
 
 ### Description
 
@@ -26,42 +30,39 @@ wirelessly stream audio from a cellphone music player to a car Aux input.
 Documents
 ---------
 
-### Design Files
+The schematics, board layout, BOM and testing results are in the `schematics`
+directory of this repository.
 
-* [Schematics (eagle)](./BT_Audio_iJoey.sch)
-* [Schematics (pdf)](./BT_Audio_iJoey.pdf)
-* [Board Layout (eagle)](./BT_Audio_iJoey.brd)
-* [Board Layout (png image)](./BT_Audio_iJoey.brd.png)
-* [Bill of Materials](./BT_Audio_iJoey_BOM.xls)
-* [Testing Results + Changelog](./BT_Audio_Testing-Changelog.xls)
+The schematics were created with Eagle, and are also available as PNGs.
 
 ### Assembly Files
 
-* [Board Layout DXF](./BT_Audio_iJoey.dxf)
-* [Assembly file archive](./BT_Audio_iJoey_R0.1_Assembly.zip)
-    * .top  - Top Copper Layer
-    * .bot  - Bottom Copper Layer
-    * .smt - Top Soldermask
-    * .slk - Top Silkscreen
-    * .tsp - Top Solderpaste
-    * .smb - Bottom Soldermask
-    * .bsk - Bottom Silkscreen
-    * .bsp - Bottom Solderpaste
-    * .oln - PCB Outline
-    * .drd - Excellon Drill Data
-    * .drl - Basic Drill tool information
-    * .dri - Extended Drill tool information
+The assembly files are in the `fabrication` subfolder, including the board
+layout DXF and and archive of all assembly files:
+
+ * .top  - Top Copper Layer
+ * .bot  - Bottom Copper Layer
+ * .smt - Top Soldermask
+ * .slk - Top Silkscreen
+ * .tsp - Top Solderpaste
+ * .smb - Bottom Soldermask
+ * .bsk - Bottom Silkscreen
+ * .bsp - Bottom Solderpaste
+ * .oln - PCB Outline
+ * .drd - Excellon Drill Data
+ * .drl - Basic Drill tool information
+ * .dri - Extended Drill tool information
 
 Details
 -------
 
 ### Block diagram
 
-![Bluetooth Audio Block Diagram](./BT%20iJoey%20Block.svg "Bluetooth Audio Block Diagram")
+![Bluetooth Audio Block Diagram](/docs/BT%20iJoey%20Block.svg "Bluetooth Audio Block Diagram")
 
 ### Parts Layout
 
-![Bluetooth Audio Headers](./BT_Audio_header.JPG "Bluetooth Audio Headers")
+![Bluetooth Audio Headers](/docs/BT_Audio_header.JPG "Bluetooth Audio Headers")
 
 ### Inputs/Outputs
 
@@ -202,16 +203,9 @@ audio support. Advantages:
 * Built-in microphone pre-amplifier with software-adjustable gain
 * software-adjustable output gain as well
 
-The basic WT-32 design is very strongly based from it's [Evaluation
+The basic WT-32 design is very strongly based from its [Evaluation
 Board](http://www.digikey.com/product-search/en/rf-if-and-rfid/rf-evaluation-and-development-kits-boards/3539644?k=WT32).
-WT32 Documentation:
-
-* [WT32 Datasheet](./Documentation/WT32_Datasheet.pdf)
-* [WT32 Design Guide](./Documentation/WT32_Design_Guide.pdf)
-* [iWrap4 Firmware User Guide](./Documentation/iWRAP4_User_Guide.pdf)
-* [A2DP Profile Application NOte](./Documentation/iWRAP_A2DP_Applicaton_Note.pdf)
-* [WT32 evaluation board schematic](./Documentation/WT32_evalboard_schematic.pdf)
-* [WT32 evaluation board BOM](./Documentation/WT32_evaluationboard_BOM.XLS)
+The WT32 documentation is available in the Documentation directory.
 
 ### Configuration Interface
 
@@ -285,3 +279,13 @@ and C28 are specified as Tantalum capacitors, since they lie directly in the
 audio pathway and need to be robust to handle the voltage transients of plugging
 and unplugging audio signals. Care must be taken to chose capacitors with a
 good sonic signature, low ESR and a sufficient voltage rating.
+
+## License
+
+Copyright (c) 2014 Ford Motor Company
+
+The electrical and mechanical designs in this repository are available under the
+[Creative Commons Attribution 4.0
+International](http://creativecommons.org/licenses/by/4.0/deed.en_US) license.
+
+[OpenXC]: http://openxcplatform.com
