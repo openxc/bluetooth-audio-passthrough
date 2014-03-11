@@ -7,6 +7,10 @@ This repository contains the documentation and open source design files for an
 example OpenXC hardware accessory, the Bluetooth Audio accessory, originally
 created by Ford.
 
+There is a [gallery of
+photos](https://plus.google.com/photos/108408483770573977605/albums/5989364910333751905)
+of the prototype accessory.
+
 ![Bluetooth Audio Accessory](/docs/BT_Audio_scaled.JPG "The Bluetooth Audio Accessory")
 
 ### Description
